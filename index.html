@@ -8,6 +8,7 @@
 </head>
 <body>
     <script>
+        // JSON object containing book data
         const bookData = {
             "Books": [
                 {
@@ -25,11 +26,15 @@
             ]
         };
 
+        // Log the title of the first book
         console.log("Title of the first book:", bookData.Books[0].title);
+
+        // Log the author of the second book
         console.log("Author of the second book:", bookData.Books[1].author);
 
+        // Log the genres of all books
         bookData.Books.forEach(book => {
-            console.log("Genres:", book.genres);
+            console.log("Genres:", book.genres.join(", "));
         });
     </script>
 </body>
